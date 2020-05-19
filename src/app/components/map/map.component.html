@@ -1,0 +1,21 @@
+<app-select (sendSelected)=getSelected($event) ></app-select>
+<div class="container" *ngIf="selectedState">
+    <div class="row">
+        <div class="col-6"><b class="borderRight">Cities</b>
+        <app-dashboard (fixDist)="onFinal($event)"[selectedState]="selectedState"
+         (sendDistricts)=getDistricts($event)></app-dashboard>
+        </div>
+        <div class="col-6"><b class="borderRight">Map</b>
+            <div class="container mt-4">
+                <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+                    <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+                  </agm-map>
+            
+            </div>
+    </div>
+    </div>
+
+</div>
+
+
+

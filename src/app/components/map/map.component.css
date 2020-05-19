@@ -1,0 +1,14 @@
+agm-map {
+    height: 400px;
+   }
+
+   .borderRight{
+    border: black solid 1px;
+    text-align: center;
+    display: block;
+
+}
+
+.city{
+    margin-left: auto;
+}
