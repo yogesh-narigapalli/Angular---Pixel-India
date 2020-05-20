@@ -23,7 +23,7 @@ import { SelectComponent } from './components/select/select.component';
     NgbModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCOu9LVW_s91myHS0SWtuSy11Bc4GurZ4Y'
+      apiKey: 'Key'
     })
   ],
   providers: [],
