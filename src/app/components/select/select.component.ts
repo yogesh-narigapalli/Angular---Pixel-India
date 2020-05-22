@@ -8,6 +8,7 @@ import {DataService} from '../../services/data.service';
 export class SelectComponent implements OnInit {
   @Output() sendSelected: EventEmitter<any> = new EventEmitter();
   
+  
   completeData=[];
   randomStates=[];
   uniqueStates=[];

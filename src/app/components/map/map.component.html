@@ -7,9 +7,13 @@
         </div>
         <div class="col-6"><b class="borderRight">Map</b>
             <div class="container mt-4">
-                <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
-                    <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+                <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng" >
+                    <agm-marker *ngFor="let single of totalDistrictsLL " [latitude]="single.lat" [longitude]="single.lng">
+                        
+                    </agm-marker>
+                    <!-- <agm-marker  [latitude]="latt" [longitude]="lngg"></agm-marker> -->
                   </agm-map>
+                  
             
             </div>
     </div>
